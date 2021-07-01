@@ -1,4 +1,4 @@
-React,js
+React.js
 
 A JavaScript Library for building user interfaces that are shown in the browser and run in the browser. It does not run on a server or communicate with database server
 
@@ -15,18 +15,20 @@ Create components folder in src folder. Create component in the commponents dire
 
 - Props are used to transfer data between components. Props are received by the functions in the components. 
 
-props.goals.map((goal) => {
-    return (
-        <li key={goal.id}>{goal.text}</li>
-        );
-})
+#
+    props.goals.map((goal) => {
+        return (
+                <li key={goal.id}>{goal.text}</li>
+            );
+    })
 
 In Javascript, we can create function inside a function. Communication between child and parent can be done by handling props and functions efficiently.
 
 - State is used to rerender the parts of the app. {useState} has to be used. useState has two elements, the state and the update state function. Using setState, we have to concat instead of push.
 
-setGoals((prevGoals) =>{
-    return prevGoals.concat(newGoal);
-})
+#
+    setGoals((prevGoals) =>{
+        return prevGoals.concat(newGoal);
+    })
 
 - Handling two way binding 
